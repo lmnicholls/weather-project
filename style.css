@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding-bottom: 100px;
+}
+
+.background {
+  background: url("images/start.jpg") no-repeat center center fixed;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  opacity: 0.5;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  top: 0;
+}
+
+.page-header {
+  margin-bottom: 75px;
+  margin-top: 75px;
+}
+
+.form-group {
+  display: flex;
+  flex-flow: row;
+  height: 40px;
+}
+
+.input {
+  width: 80vw;
+
+  margin-right: 10px;
+}
+
+.form-control {
+  margin-right: 40vw;
+}
+
+.padding {
+  margin-right: 10px;
+}
+
+.btn {
+  font-size: calc(12px + 0.3vw);
+}
+
+.search {
+  margin-right: 9px;
+}
+
+.find-me {
+  min-width: 90px;
+}
+
+.processing {
+  padding-top: 8px;
+  padding-left: 5px;
+  display: none;
+}
+
+.set-default {
+  margin-top: 5px;
+  display: none;
+}
+
+.current-weather {
+  padding-top: 75px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.current-city-data {
+  margin-bottom: 75px;
+}
+
+.city-data {
+  text-align: center;
+}
+
+#current-weather-icon {
+  width: 100px;
+}
+
+.city-weekly-data {
+  border: 1px solid black;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.weekly-weather {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.map {
+  padding-top: 50px;
+  text-align: center;
+  display: none;
+}
+
+.map iframe {
+  width: 50%;
+}
+
+@media only screen and (max-width: 770px) {
+  .weekly-weather {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
